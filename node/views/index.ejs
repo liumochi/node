@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>123</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+      <% data.forEach(function (result,index) {%>
+          <li>id:<%= result.USER_ID%></li>
+          <li>name:<%= result.ACCOUNT%></li>
+       <% })%>
   </body>
 </html>
